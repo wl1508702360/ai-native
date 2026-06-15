@@ -1,0 +1,63 @@
+# ==========================================
+# 1. 环境变量与配置文件（最核心）
+# ==========================================
+# 包含真实密钥和敏感信息的文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 建议保留的示例模板（供团队成员参考）
+!.env.example
+!.env.template
+
+# ==========================================
+# 2. Python 虚拟环境与依赖
+# ==========================================
+# Python 虚拟环境目录
+venv/
+.venv/
+env/
+
+# Python 缓存与编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 打包与分发文件
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook 缓存
+.ipynb_checkpoints/
+
+# ==========================================
+# 3. FastAPI / Uvicorn 相关
+# ==========================================
+# 服务器运行日志
+*.log
+
+# Uvicorn 默认生成的 PID 文件
+uvicorn.pid
+
+# ==========================================
+# 4. IDE 与系统隐藏文件
+# ==========================================
+# PyCharm / IntelliJ IDEA
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS 系统生成的隐藏文件
+.DS_Store
+
+# Windows 系统缩略图缓存
+Thumbs.db
+
+
+
+
+

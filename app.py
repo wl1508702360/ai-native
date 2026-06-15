@@ -100,9 +100,9 @@ with st.sidebar:
         with col1:
             if st.button(f"{session}", width="stretch", type="primary" if session == st.session_state else "secondary", key=f"load-{session}", icon="✅"):
                 session_data = load_session(session)
-                print("*"*40)
-                print(session_data)
-                print("*"*40)
+                # print("*"*40)
+                # print(session_data)
+                # print("*"*40)
                 st.session_state.current_session = session_data["current_session"]
                 st.session_state.message = session_data["message"]
                 st.session_state.nick_name = session_data["nick_name"]
@@ -133,7 +133,7 @@ sys_prompt = f"""
 """
 if prompt:
     chat_message("user").write(prompt)
-    print("*"*30, prompt, "*"*30)
+    # print("*"*30, prompt, "*"*30)
 
     # 将会话加入到缓存中 使会话可以以追加的形式添加到页面中展示
     st.session_state.message.append({"role": "user", "content": prompt})
